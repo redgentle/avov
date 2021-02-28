@@ -1,0 +1,77 @@
+@charset "utf-8";
+/* CSS Document */
+
+html,
+body{height:100%;}
+body{min-height:700px;min-width:1500px;position:relative;font-family: 'Cabin', sans-serif;background:#000;}
+
+h1{position:absolute;left:66px;top:70px;z-index:77;}
+
+/** sns **/
+.sns{position:absolute;right:72px;top:64px;z-index:77;}
+.sns li{float:left;margin-left:5px;}
+.sns li a{display:block;width:35px;height:35px;text-indent:-9999px;background:url('../images/sns.jpg') no-repeat;}
+.sns .sns01 a{background-position:0 0;}
+.sns .sns02 a{background-position:-35px 0;}
+.sns .sns03 a{background-position:-70px 0;}
+.sns .sns04 a{background-position:-105px 0;}
+.sns .sns01:hover a{background-position:0 -35px;}
+.sns .sns02:hover a{background-position:-35px -35px;}
+.sns .sns03:hover a{background-position:-70px -35px;}
+.sns .sns04:hover a{background-position:-105px -35px;}
+
+/** bottom **/
+.bottom{position:absolute;left:0;bottom:0;z-index:77;width:100%;overflow:hidden;background:#000;}
+.bottom ul li{float:left;width:173px;}
+.bottom ul li a{display:block;height:58px;text-indent:-9999px;background:url('../images/menu.jpg') no-repeat;}
+.bottom ul .menu01{margin:0 20px 0 40px;}
+.bottom ul .menu01 a{background-position:0 0;}
+.bottom ul .menu02 a{background-position:-173px 0;}
+.bottom ul .menu01:hover a{background-position:0 -60px;}
+.bottom ul .menu02:hover a{background-position:-173px -60px;}
+.bottom p{position:absolute;right:58px;top:20px;font-size:13px;color:#4d4d4d;}
+
+
+/** mainPage **/
+.mainPage{position:relative;height:100%;background:url('../images/bg.jpg') no-repeat center center;}
+.mainPage .typo{position:absolute;left:0;top:50%;width:100%;margin-top:-120px;text-align:center;color:#fff;}
+.mainPage .typo .t01{margin-bottom:20px;font-size:90px;line-height:100px;font-weight:bold;text-shadow:3px 3px 4px #000;}
+.mainPage .typo .t02{font-size:20px;color:#737373;line-height:28px;}
+
+.mainPage .menu{width:290px;position:absolute;right:74px;bottom:125px;}
+.mainPage .menu li{margin:1px 0 0 0;}
+.mainPage .menu li a{display:block;padding:0 0 0 20px;height:52px;line-height:52px;font-size:15px;color:#000;font-weight:bold;background:#fff url('../images/arr.png') no-repeat 95% 50%;;}
+.mainPage .menu li:nth-child(1) a:hover{background-color:#7f25ef;color:#fff;}
+.mainPage .menu li:nth-child(2) a:hover{background-color:#0089d8;color:#fff;}
+.mainPage .menu li:nth-child(3) a:hover{background-color:#00d881;color:#fff;}
+.mainPage .menu li:nth-child(4) a:hover{background-color:#ef252c;color:#fff;}
+.mainPage .menu li:nth-child(5) a:hover{background-color:#7f25ef;color:#fff;}
+
+/**pop**/
+
+.modalBg2{display:none;position:fixed;top:0;left:0;background-color:#000;filter:alpha(opacity=60);opacity:0.85;-moz-opacity:0.85;width:100%;height:100%;z-index:200;}
+.mPopup2{display:none;position:absolute;top:140px;left:50%;margin:0 0 0 -603px;width:1206px;height:703px;background:#000;z-index:300;border:1px solid #292929;
+	}
+.mPopup2 h4{position: absolute;top: 100px;left:80px;}		
+.mPopup2 a {position: absolute;top: 50px;right:50px;}
+.mPopup2 .iSk{width:983px;height:275px;color:#fff;position: absolute;top: 240px;left:80px; line-height: 25px;}
+.iClose2.white {
+    background-image: url(../images/ico_close2w.png);
+    width: 27px;
+    height: 27px;}
+
+
+.modalBg2{display:none;position:fixed;top:0;left:0;background-color:#000;filter:alpha(opacity=60);opacity:0.85;-moz-opacity:0.85;width:100%;height:100%;z-index:200;}
+.mPopup1{display:none;position:absolute;top:140px;left:50%;margin:0 0 0 -466px;width:932px;height:550px;background:#000;z-index:300;border:1px solid #292929;
+	}
+.mPopup1 h4{position: absolute;top: 100px;left:80px;}		
+.mPopup1 a {position: absolute;top: 50px;right:50px;}
+.mPopup1 .iSk2{width:932px;height:550px;color:#fff;position: absolute;top: 240px;left:80px; line-height: 25px;}
+.iClose2.white {
+    background-image: url(../images/ico_close2w.png);
+    width: 27px;
+    height: 27px;}
+
+.mPopup1 #flag{position: absolute;top:-60px;left:100px;}
+.mPopup1 #usa{position: absolute;top:-63px;left:172px;}
+.mPopup1 #add{position: absolute;top:60px;left:100px;}
